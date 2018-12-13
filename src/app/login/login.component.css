@@ -1,0 +1,13 @@
+.card-body{
+  border-color: black;
+  border-style: solid;
+}
+#lbl{
+  font-weight:bold;
+}
+#noaccount{
+  margin-top: 10px;
+}
+#recordar{
+  margin-top: 10px;
+}

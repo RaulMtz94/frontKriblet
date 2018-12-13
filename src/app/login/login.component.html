@@ -1,0 +1,38 @@
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+                    <form ngNativeValidate #f="ngForm" class="form-horizontal form-material" (ngSubmit)="ingresar( f )">
+
+              <h5 id="lbl" class="card-title text-center">Kriblet News</h5>
+              <h6 class="card-title text-center">Inicio de sesion</h6>
+                <div class="form-label-group">
+                        <label id="lbl" for="inputEmail">Correo</label>
+                        <input [ngModel]="email" name="email" id="inputEmail" class="form-control" type="email" required placeholder="Correo de usuario">
+                        
+                </div>
+  
+                <div class="form-label-group">
+                        <label id="lbl" for="inputPassword">Contraseña</label>
+                        <input ngModel name="password" class="form-control" type="password" required  placeholder="Contraseña">
+                </div>
+  
+                <div id="recordar" class="custom-control custom-checkbox mb-3">
+                        <input [(ngModel)]="recuerdame" name="recuerdame" id="checkbox-signup" type="checkbox" class="filled-in chk-col-light-blue">
+                        <label for="checkbox-signup"> Recuerdame </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Acceder</button>
+                <div id="noaccount" class="form-label-group">
+                 
+                        No tienes una cuenta? <a routerLink="/register" class="text-primary m-l-5"><b>Registrate</b></a>
+               
+                </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>

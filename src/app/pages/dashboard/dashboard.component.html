@@ -1,0 +1,22 @@
+<div *ngFor = "let not of noticias"  class="col-lg-5 col-md-5 col-sm-4" style="margin-left: 10%">
+    <!-- Card -->
+    <div class="card">
+        <img class="card-img-top img-responsive" src="{{not.img}}" alt="Card image cap">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-6">
+                        <h4 class="card-title">{{not.titulo}}</h4>
+                </div>
+                <div class="col-sm-6">
+                    <a class="float-lg-right"> A {{not.likes}} personas les gusta esto</a>
+                     
+                 </div>
+            </div>
+         
+            <p class="card-text">{{not.description}}</p>
+            <a href="{{not.link}}" >Leer mas</a>
+            <button (click)="liked(not)"  class="btn-success  float-right">Me gusta</button>
+        </div>
+    </div>
+    <!-- Card -->
+</div>
